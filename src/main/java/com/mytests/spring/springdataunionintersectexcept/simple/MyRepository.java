@@ -70,7 +70,7 @@ public class MyRepository {
             """;
        return entityManager.createQuery(query, String.class).getResultList();
     };
-
+   // https://youtrack.jetbrains.com/issue/IDEA-341904
     public List<String> useNestedUnion(){
         String query =  """
             select t.name from MyThirdEntity t where
