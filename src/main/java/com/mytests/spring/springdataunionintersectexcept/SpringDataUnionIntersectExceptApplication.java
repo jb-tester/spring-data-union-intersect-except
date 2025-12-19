@@ -31,7 +31,14 @@ ApplicationContext ctx;
         System.out.println("use 'intersect': "+myRepository.useIntersect());
         System.out.println("use 'except': "+myRepository.useExcept());
         System.out.println("use nested 'union all': "+myRepository.useNestedUnion());
-        System.out.println("use subquery with association': "+myRepository.useSubquery());
-
+        System.out.println("use subquery with association: "+myRepository.useSubquery());
+        System.out.println("use case with plus-connected subqueries: "+myRepository.useCaseWithPlus());
+        System.out.println("use case with ||-connected subqueries: "+myRepository.useCaseWithConcat());
+        System.out.println("use case with OR: "+myRepository.useCaseWithOr());
+        System.out.println("use case expression: "+myRepository.useCase());
+        System.out.println("use plus-connected subqueries: "+myRepository.usePlusWithSubqueries());
+        System.out.println("use concatenated subquaries: "+myRepository.useConcatWithSunqueries());
+        System.out.println("use and-connected subqueries: "+myRepository.useAndWithSubqueries());
+        System.out.println("use insert with union expr: " + myRepository.insertWithUnion());
     }
 }
