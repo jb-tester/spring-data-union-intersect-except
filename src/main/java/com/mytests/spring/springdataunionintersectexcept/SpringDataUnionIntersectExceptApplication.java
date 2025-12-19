@@ -37,7 +37,7 @@ ApplicationContext ctx;
         System.out.println("use case with OR: "+myRepository.useCaseWithOr());
         System.out.println("use case expression: "+myRepository.useCase());
         System.out.println("use plus-connected subqueries: "+myRepository.usePlusWithSubqueries());
-        System.out.println("use concatenated subquaries: "+myRepository.useConcatWithSunqueries());
+        System.out.println("use concatenated subquaries: "+myRepository.useConcatWithSubqueries());
         System.out.println("use and-connected subqueries: "+myRepository.useAndWithSubqueries());
         System.out.println("use insert with union expr: " + myRepository.insertWithUnion());
     }

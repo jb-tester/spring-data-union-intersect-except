@@ -175,7 +175,7 @@ public class MyRepository {
                 """;
         return entityManager.createQuery(query).getResultList();
     }
-    public List useConcatWithSunqueries(){
+    public List useConcatWithSubqueries(){
         String query = """
                 select (SELECT f.name FROM MyFirstEntity f WHERE f.id = t.id )
                             ||
